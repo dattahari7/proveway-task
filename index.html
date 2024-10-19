@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAY! It's BOGO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">YAY! It’s BOGO</h1>
+      <form id="bogo-form">
+        <div class="option">
+          <div class="unit-wrapper">
+              <input type="radio" id="option1" name="bogo" value="1" />
+            <div class="unit">
+              <label for="option1">
+                <span class="unit-text">1 Unit</span>
+                <span class="discount">10% Off</span>
+                <p class="standard-text">Standard Price</p>
+              </label>
+            </div>
+            <div class="price-info">
+              <span class="price">$10.00 USD</span>
+              <span class="old-price">$24.00 USD</span>
+            </div>
+          </div>
+          <div class="size-color-table collapsible-content" id="size-color-1">
+            <div class="size-color-header">
+              <h4 class="label">Size</h4>
+              <h4 class="label">Colour</h4>
+            </div>
+            <div class="size-color-row">
+              <label>#1</label>
+              <select class="size">
+                <option selected disabled hidden>Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select class="color">
+                <option selected disabled hidden>Colour</option>
+                <option>Black</option>
+                <option>Red</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="option most-popular">
+          <div class="unit-wrapper">
+            <input type="radio" id="option2" name="bogo" value="2" checked />
+            <div class="unit">
+              <label for="option2">
+                <span class="unit-text">2 Unit</span>
+                <span class="discount">20% Off</span>
+              </label>
+            </div>
+            <div class="price-info">
+              <span class="price">$18.00 USD</span>
+              <span class="old-price">$24.00 USD</span>
+            </div>
+          </div>
+          <div class="size-color-table collapsible-content" id="size-color-2">
+            <div class="size-color-header">
+              <h4 class="label">Size</h4>
+              <h4 class="label">Colour</h4>
+            </div>
+            <div class="size-color-row">
+              <label>#1</label>
+              <select class="size">
+                <option selected disabled hidden>Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select class="color">
+                <option selected disabled hidden>Colour</option>
+                <option>Black</option>
+                <option>Red</option>
+                <option>Blue</option>
+              </select>
+            </div>
+            <div class="size-color-row">
+              <label>#2</label>
+              <select class="size">
+                <option selected disabled hidden>Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select class="color">
+                <option selected disabled hidden>Colour</option>
+                <option>Black</option>
+                <option>Red</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="option">
+          <div class="unit-wrapper">
+            <input type="radio" id="option3" name="bogo" value="3" />
+            <div class="unit">
+              <label for="option3">
+                <span class="unit-text">3 Unit</span>
+                <span class="discount">30% Off</span>
+              </label>
+            </div>
+            <div class="price-info">
+              <span class="price">$24.00 USD</span>
+              <span class="old-price">$24.00 USD</span>
+            </div>
+          </div>
+          <div class="size-color-table collapsible-content" id="size-color-3">
+            <div class="size-color-header">
+              <h4 class="label">Size</h4>
+              <h4 class="label">Colour</h4>
+            </div>
+            <div class="size-color-row">
+              <label>#1</label>
+              <select class="size">
+                <option selected disabled hidden>Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select class="color">
+                <option selected disabled hidden>Colour</option>
+                <option>Black</option>
+                <option>Red</option>
+                <option>Blue</option>
+              </select>
+            </div>
+            <div class="size-color-row">
+              <label>#2</label>
+              <select class="size">
+                <option selected disabled hidden>Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select class="color">
+                <option selected disabled hidden>Colour</option>
+                <option>Black</option>
+                <option>Red</option>
+                <option>Blue</option>
+              </select>
+            </div>
+            <div class="size-color-row">
+              <label>#3</label>
+              <select class="size">
+                <option selected disabled hidden>Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select class="color">
+                <option>Black</option>
+                <option>Red</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="delivery-details">
+        <p class="free-delivery">Free Delivery</p>
+        <p class="total">Total: <span id="total-price">$18.00 USD</span></p>
+      </div>
+      <button class="add-to-cart">
+        <img src="icons/plus-16.ico" alt="plus" />Add to Cart
+      </button>
+
+      <p class="poweredby">@ Powered by Pumper</p>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
